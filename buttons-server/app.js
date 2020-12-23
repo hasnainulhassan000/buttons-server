@@ -5,7 +5,7 @@ function get(){
     Http.open("GET", url);
     
     Http.setRequestHeader("Content-Type", "application/json");
-    Http.send(JSON.stringify({name:"John Rambo", time:"2pm"}));
+    Http.send(JSON.stringify({name:"Hasnain", time:"2pm"}));
     
     
     Http.onreadystatechange = (e) => {
@@ -19,7 +19,7 @@ function get(){
     Http.open("POST", url);
     
     Http.setRequestHeader("Content-Type", "application/json");
-    Http.send(JSON.stringify({name:"John Rambo", time:"2pm"}));
+    Http.send(JSON.stringify({name:"Hasnain", time:"2pm"}));
     
     Http.onreadystatechange = (e) => {
         document.write(Http.responseText)
@@ -32,7 +32,7 @@ function get(){
         const url='http://192.168.50.210:3000/bulb';
         Http.open("PUT", url);
         Http.setRequestHeader("Content-Type", "application/json");
-        Http.send(JSON.stringify({name:"John Rambo", time:"2pm"}));
+        Http.send(JSON.stringify({name:"Hasnain", time:"2pm"}));
         
         Http.onreadystatechange = (e) => {
             document.write(Http.responseText)
@@ -44,7 +44,7 @@ function get(){
         const url='http://192.168.50.210:3000/bulb';
         Http.open("DELETE", url);
         Http.setRequestHeader("Content-Type", "application/json");
-        Http.send(JSON.stringify({name:"John Rambo", time:"2pm"}));
+        Http.send(JSON.stringify({name:"Hasnain", time:"2pm"}));
         Http.onreadystatechange = (e) => {
             document.write(Http.responseText)
         }
